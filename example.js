@@ -33,9 +33,9 @@ let letters = [
 let n = 0;
 function display() {
   if (n <= 25) {
+    IMG.setAttribute("src", `./images/${n}.jpg`);
     h3.style.fontSize = "100px";
     h3.innerText = letters[n];
-    IMG.setAttribute("src", `./images/${n}.jpg`);
     n++;
   } else {
     IMG.setAttribute("src", "");
